@@ -291,14 +291,14 @@ export default function FichesListPage() {
                             locale: fr,
                           })}
                         </TableCell>
-                        <TableCell className="text-right py-3 space-x-2 hidden">
+                        <TableCell className="text-right py-3 space-x-2">
                           {user?.role === "ADMIN" && (
                             <AlertDialog>
                               <AlertDialogTrigger asChild>
                                 <Button
                                   variant="outline"
                                   size="sm"
-                                  className="text-red-600 border-red-200 hover:bg-red-50 hover:text-red-700"
+                                  className="text-red-600 hidden border-red-200 hover:bg-red-50 hover:text-red-700"
                                 >
                                   <Trash2 className="h-4 w-4 sm:mr-2" />
                                   <span className="hidden sm:inline">
