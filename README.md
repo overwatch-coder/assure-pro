@@ -54,7 +54,13 @@ cd assure-pro
 npm install
 ```
 
-### 2. Démarrage en développement
+### 2. Génération des données de démonstration
+
+```bash
+npm run seed
+```
+
+### 3. Démarrage en développement
 
 ```bash
 npm run dev
@@ -62,7 +68,7 @@ npm run dev
 
 L'application sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-### 3. Build pour la production
+### 4. Build pour la production
 
 ```bash
 npm run build
