@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AssurePro - Gestion de Fiches Assurance
 
-## Getting Started
+Cette mini-application "Gestion de Fiches Assurance" a été développée dans le cadre du test technique frontend.
 
-First, run the development server:
+## Choix Techniques
+
+1. **Framework & Architecture** :
+   - Développé avec **Next.js 16 (App Router)** pour l'architecture des pages et les routes API intégrées.
+   - **TypeScript** pour assurer un typage robuste sur l'ensemble de l'application.
+2. **Gestion des données et authentification** :
+   - Pour respecter la consigne d'une "API simulée" tout en ayant un rendu professionnel, j'ai opté pour implémenter une **API locale Next.js** (`/api/...`) qui utilise un fichier statique `data.json` pour la persistance à chaud selon votre règle (pas de fausse donnée / "no mock rule").
+   - **Authentification** par JWT avec Cookies `HttpOnly`.
+   - Mots de passe chiffrés avec `bcryptjs`.
+3. **Gestion d'État & Fetching** :
+   - Utilisation de **React Query (@tanstack/react-query)** pour la gestion des données asynchrones (mise en cache, invalidation après mise à jour, états de chargement fluides).
+4. **Interface Utilisateur (UI)** :
+   - **Tailwind CSS v4** pour le design responsif et sur-mesure.
+   - **Shadcn UI** pour les composants de base (Table, Select, Card, Button, Input, Sheet...) avec les icônes de `lucide-react`.
+   - **Recharts** pour la création de graphiques dynamiques sur le Dashboard.
+   - **Sonner** pour les notifications toasts interactives.
+
+## Fonctionnalités Implémentées
+
+- **Dashboard** : KPI complets et répartition visuelle (par statut et par produit).
+- **Authentification & Rôles** : Accès contrôlé via JWT. Les rôles (ADMIN et ADVISOR) déterminent la visibilité des fiches et la capacité de réassigner (ADMIN uniquement).
+- **Liste des Fiches** : Affichage paginé avec recherche (par nom de client), et filtrage multi-critères (statut et produit). Badges de couleurs dynamiques en fonction des statuts.
+- **Détails de Fiche** : Affichage scindé des informations du client et de son produit d'assurance.
+- **Actions** : Tout conseiller peut mettre à jour le statut de sa fiche. Un admin peut réaffecter la fiche.
+- **Responsive Design** : Sidebar rétractable sur Desktop pour un mode zen "icônes uniquement", et menu "Sheet" (Drawer) sur Mobile.
+
+## Comptes de démonstration
+
+Des comptes sont fournis directement sur l'écran de connexion (`/login`) via des boutons rapides :
+
+- **ADMIN** : `admin@assurepro.fr` (Permet de voir et réassigner toutes les fiches)
+- **ADVISOR** : `jean.dupont@assurepro.fr` (Ne voit que les fiches qui lui sont assignées)
+- *(Mot de passe commun : `password123`)*
+
+## Lancement du Projet
+
+### 1. Installation des dépendances
+
+```bash
+npm install
+```
+
+### 2. Démarrage en développement
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+L'application sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Build pour la production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Réalisé par Nyamadi Atsu pour le test technique Frontend.*

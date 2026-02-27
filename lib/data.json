@@ -1,0 +1,521 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Admin User",
+      "email": "admin@assurepro.fr",
+      "role": "ADMIN",
+      "password": "$2b$10$FDLtSK5MSa19tFNt3NES3.RvFUK5Nfr5nG7KSuVcLxxPJwUt7oRlC"
+    },
+    {
+      "id": "u2",
+      "name": "Jean Dupont",
+      "email": "jean.dupont@assurepro.fr",
+      "role": "ADVISOR",
+      "password": "$2b$10$FDLtSK5MSa19tFNt3NES3.RvFUK5Nfr5nG7KSuVcLxxPJwUt7oRlC"
+    },
+    {
+      "id": "u3",
+      "name": "Marie Curie",
+      "email": "marie.curie@assurepro.fr",
+      "role": "ADVISOR",
+      "password": "$2b$10$FDLtSK5MSa19tFNt3NES3.RvFUK5Nfr5nG7KSuVcLxxPJwUt7oRlC"
+    },
+    {
+      "id": "u4",
+      "name": "Paul Martin",
+      "email": "paul.martin@assurepro.fr",
+      "role": "ADVISOR",
+      "password": "$2b$10$FDLtSK5MSa19tFNt3NES3.RvFUK5Nfr5nG7KSuVcLxxPJwUt7oRlC"
+    },
+    {
+      "id": "u5",
+      "name": "Sophie Leroy",
+      "email": "sophie.leroy@assurepro.fr",
+      "role": "ADVISOR",
+      "password": "$2b$10$FDLtSK5MSa19tFNt3NES3.RvFUK5Nfr5nG7KSuVcLxxPJwUt7oRlC"
+    }
+  ],
+  "fiches": [
+    {
+      "id": "18",
+      "clientName": "Ivy Plant",
+      "phone": "0630721051",
+      "email": "client18@example.com",
+      "product": "RCPRO",
+      "status": "CLOSED",
+      "advisorId": "u2",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 976,
+      "createdAt": "2026-02-26T11:58:35.797Z"
+    },
+    {
+      "id": "21",
+      "clientName": "Ivy Brown",
+      "phone": "0626420125",
+      "email": "client21@example.com",
+      "product": "AUTO",
+      "status": "IN_PROGRESS",
+      "advisorId": "u3",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 642,
+      "createdAt": "2026-02-18T10:58:48.034Z"
+    },
+    {
+      "id": "14",
+      "clientName": "Charlie Miller",
+      "phone": "0639608554",
+      "email": "client14@example.com",
+      "product": "AUTO",
+      "status": "NEW",
+      "advisorId": "u3",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 848,
+      "createdAt": "2026-02-05T06:10:04.969Z"
+    },
+    {
+      "id": "30",
+      "clientName": "Bob Boss",
+      "phone": "0678244238",
+      "email": "client30@example.com",
+      "product": "AUTO",
+      "status": "IN_PROGRESS",
+      "advisorId": "u5",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 316,
+      "createdAt": "2026-01-29T05:36:11.138Z"
+    },
+    {
+      "id": "8",
+      "clientName": "Frank Martin",
+      "phone": "0682324425",
+      "email": "client8@example.com",
+      "product": "AUTO",
+      "status": "ASSIGNED",
+      "advisorId": "u4",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 918,
+      "createdAt": "2025-11-30T00:54:51.138Z"
+    },
+    {
+      "id": "7",
+      "clientName": "Ivy Dubois",
+      "phone": "0612214863",
+      "email": "client7@example.com",
+      "product": "MRH",
+      "status": "IN_PROGRESS",
+      "advisorId": "u3",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 268,
+      "createdAt": "2025-11-21T17:08:40.141Z"
+    },
+    {
+      "id": "16",
+      "clientName": "Grace Brown",
+      "phone": "0698345143",
+      "email": "client16@example.com",
+      "product": "RCPRO",
+      "status": "CLOSED",
+      "advisorId": "u5",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 998,
+      "createdAt": "2025-11-21T03:31:22.228Z"
+    },
+    {
+      "id": "13",
+      "clientName": "Charlie Miller",
+      "phone": "0644141854",
+      "email": "client13@example.com",
+      "product": "AUTO",
+      "status": "CLOSED",
+      "advisorId": "u4",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 844,
+      "createdAt": "2025-11-18T02:25:43.631Z"
+    },
+    {
+      "id": "3",
+      "clientName": "Ivy Martin",
+      "phone": "0694688701",
+      "email": "client3@example.com",
+      "product": "RCPRO",
+      "status": "IN_PROGRESS",
+      "advisorId": "u3",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 198,
+      "createdAt": "2025-11-13T08:55:27.665Z"
+    },
+    {
+      "id": "15",
+      "clientName": "Frank Dubois",
+      "phone": "0629470338",
+      "email": "client15@example.com",
+      "product": "RCPRO",
+      "status": "NEW",
+      "advisorId": null,
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 167,
+      "createdAt": "2025-11-11T17:04:35.184Z"
+    },
+    {
+      "id": "22",
+      "clientName": "Bob Plant",
+      "phone": "0658203022",
+      "email": "client22@example.com",
+      "product": "AUTO",
+      "status": "NEW",
+      "advisorId": null,
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 660,
+      "createdAt": "2025-11-07T18:08:57.902Z"
+    },
+    {
+      "id": "12",
+      "clientName": "Charlie Martin",
+      "phone": "0672464964",
+      "email": "client12@example.com",
+      "product": "RCPRO",
+      "status": "CLOSED",
+      "advisorId": "u5",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 211,
+      "createdAt": "2025-10-27T22:23:04.656Z"
+    },
+    {
+      "id": "27",
+      "clientName": "Eve Lee",
+      "phone": "0656349273",
+      "email": "client27@example.com",
+      "product": "AUTO",
+      "status": "NEW",
+      "advisorId": null,
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 941,
+      "createdAt": "2025-09-29T10:33:30.099Z"
+    },
+    {
+      "id": "4",
+      "clientName": "Ivy Brown",
+      "phone": "0644698115",
+      "email": "client4@example.com",
+      "product": "RCPRO",
+      "status": "CLOSED",
+      "advisorId": "u4",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 156,
+      "createdAt": "2025-09-05T16:33:39.353Z"
+    },
+    {
+      "id": "24",
+      "clientName": "David Boss",
+      "phone": "0661962436",
+      "email": "client24@example.com",
+      "product": "AUTO",
+      "status": "ASSIGNED",
+      "advisorId": "u5",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 974,
+      "createdAt": "2025-08-17T15:50:22.238Z"
+    },
+    {
+      "id": "20",
+      "clientName": "Frank Boss",
+      "phone": "0624885942",
+      "email": "client20@example.com",
+      "product": "AUTO",
+      "status": "NEW",
+      "advisorId": null,
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 845,
+      "createdAt": "2025-08-04T08:18:47.338Z"
+    },
+    {
+      "id": "10",
+      "clientName": "Hugo Miller",
+      "phone": "0675147073",
+      "email": "client10@example.com",
+      "product": "MRH",
+      "status": "NEW",
+      "advisorId": null,
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 640,
+      "createdAt": "2025-08-02T18:55:29.460Z"
+    },
+    {
+      "id": "9",
+      "clientName": "Alice Kelly",
+      "phone": "0635672419",
+      "email": "client9@example.com",
+      "product": "RCPRO",
+      "status": "ASSIGNED",
+      "advisorId": "u2",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 603,
+      "createdAt": "2025-07-09T18:37:54.767Z"
+    },
+    {
+      "id": "17",
+      "clientName": "Grace Kelly",
+      "phone": "0692787322",
+      "email": "client17@example.com",
+      "product": "RCPRO",
+      "status": "CLOSED",
+      "advisorId": "u2",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 842,
+      "createdAt": "2025-06-08T19:46:32.637Z"
+    },
+    {
+      "id": "11",
+      "clientName": "Grace Kelly",
+      "phone": "0688003838",
+      "email": "client11@example.com",
+      "product": "AUTO",
+      "status": "ASSIGNED",
+      "advisorId": "u5",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 117,
+      "createdAt": "2025-06-05T13:37:16.163Z"
+    },
+    {
+      "id": "6",
+      "clientName": "Hugo Kelly",
+      "phone": "0617567006",
+      "email": "client6@example.com",
+      "product": "MRH",
+      "status": "IN_PROGRESS",
+      "advisorId": "u3",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 532,
+      "createdAt": "2025-06-02T13:50:14.977Z"
+    },
+    {
+      "id": "5",
+      "clientName": "Alice Brown",
+      "phone": "0689441673",
+      "email": "client5@example.com",
+      "product": "MRH",
+      "status": "IN_PROGRESS",
+      "advisorId": "u4",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 951,
+      "createdAt": "2025-05-15T05:09:46.396Z"
+    },
+    {
+      "id": "29",
+      "clientName": "Frank Dupont",
+      "phone": "0678308786",
+      "email": "client29@example.com",
+      "product": "RCPRO",
+      "status": "IN_PROGRESS",
+      "advisorId": "u4",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 659,
+      "createdAt": "2025-04-25T08:49:57.703Z"
+    },
+    {
+      "id": "28",
+      "clientName": "Jack Kelly",
+      "phone": "0646555088",
+      "email": "client28@example.com",
+      "product": "RCPRO",
+      "status": "NEW",
+      "advisorId": null,
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 980,
+      "createdAt": "2025-03-05T02:38:47.581Z"
+    },
+    {
+      "id": "25",
+      "clientName": "Ivy Dubois",
+      "phone": "0665253600",
+      "email": "client25@example.com",
+      "product": "RCPRO",
+      "status": "IN_PROGRESS",
+      "advisorId": "u2",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 331,
+      "createdAt": "2025-02-24T16:06:50.046Z"
+    },
+    {
+      "id": "2",
+      "clientName": "Eve Miller",
+      "phone": "0699228079",
+      "email": "client2@example.com",
+      "product": "AUTO",
+      "status": "NEW",
+      "advisorId": null,
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 328,
+      "createdAt": "2025-02-24T09:08:39.699Z"
+    },
+    {
+      "id": "1",
+      "clientName": "Bob Dupont",
+      "phone": "0618633731",
+      "email": "client1@example.com",
+      "product": "MRH",
+      "status": "CLOSED",
+      "advisorId": "u3",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 691,
+      "createdAt": "2025-02-17T06:44:28.171Z"
+    },
+    {
+      "id": "19",
+      "clientName": "Bob Smith",
+      "phone": "0660537643",
+      "email": "client19@example.com",
+      "product": "AUTO",
+      "status": "CLOSED",
+      "advisorId": "u4",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 712,
+      "createdAt": "2025-01-30T18:35:09.519Z"
+    },
+    {
+      "id": "26",
+      "clientName": "Frank Kelly",
+      "phone": "0644169597",
+      "email": "client26@example.com",
+      "product": "MRH",
+      "status": "ASSIGNED",
+      "advisorId": "u2",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 678,
+      "createdAt": "2025-01-16T03:56:23.057Z"
+    },
+    {
+      "id": "23",
+      "clientName": "Jack Boss",
+      "phone": "0622033376",
+      "email": "client23@example.com",
+      "product": "AUTO",
+      "status": "ASSIGNED",
+      "advisorId": "u4",
+      "type": "Standard",
+      "garanties": [
+        "Base",
+        "Premium Option"
+      ],
+      "prime": 732,
+      "createdAt": "2025-01-14T18:51:13.613Z"
+    }
+  ]
+}
