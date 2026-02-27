@@ -1,6 +1,6 @@
 # AssurePro - Gestion de Fiches Assurance
 
-Cette mini-application "Gestion de Fiches Assurance" a été développée dans le cadre du test technique frontend.
+Cette mini-application "Gestion de Fiches Assurance" a été développée dans le cadre du test technique frontend pour le poste de "Développeur Frontend (Zenith Assurances)".
 
 ## Choix Techniques
 
@@ -8,7 +8,7 @@ Cette mini-application "Gestion de Fiches Assurance" a été développée dans l
    - Développé avec **Next.js 16 (App Router)** pour l'architecture des pages et les routes API intégrées.
    - **TypeScript** pour assurer un typage robuste sur l'ensemble de l'application.
 2. **Gestion des données et authentification** :
-   - Pour respecter la consigne d'une "API simulée" tout en ayant un rendu professionnel, j'ai opté pour implémenter une **API locale Next.js** (`/api/...`) qui utilise un fichier statique `data.json` pour la persistance à chaud selon votre règle (pas de fausse donnée / "no mock rule").
+   - Implémentation d'une **API locale Next.js** (`/api/...`) qui utilise un fichier statique `data.json` pour la persistance des données.
    - **Authentification** par JWT avec Cookies `HttpOnly`.
    - Mots de passe chiffrés avec `bcryptjs`.
 3. **Gestion d'État & Fetching** :
@@ -18,6 +18,8 @@ Cette mini-application "Gestion de Fiches Assurance" a été développée dans l
    - **Shadcn UI** pour les composants de base (Table, Select, Card, Button, Input, Sheet...) avec les icônes de `lucide-react`.
    - **Recharts** pour la création de graphiques dynamiques sur le Dashboard.
    - **Sonner** pour les notifications toasts interactives.
+   - **React Hook Form** pour la gestion des formulaires.
+   - **Zod** pour la validation des données.
 
 ## Fonctionnalités Implémentées
 
@@ -37,6 +39,14 @@ Des comptes sont fournis directement sur l'écran de connexion (`/login`) via de
 - *(Mot de passe commun : `password123`)*
 
 ## Lancement du Projet
+
+### 0. Clonez le projet et placez vous dans le dossier
+
+```bash
+git clone https://github.com/overwatch-coder/assure-pro.git
+
+cd assure-pro
+```
 
 ### 1. Installation des dépendances
 
@@ -60,4 +70,5 @@ npm run start
 ```
 
 ---
-*Réalisé par Nyamadi Atsu pour le test technique Frontend.*
+
+#### *Réalisé par Nyamadi Atsu pour le test technique Frontend (Zenith Assurances)*
