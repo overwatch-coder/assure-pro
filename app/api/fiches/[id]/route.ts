@@ -100,15 +100,16 @@ export async function DELETE(
     const db = getDb();
 
     const ficheIndex = db.fiches.findIndex((f) => f.id === id);
-    if (ficheIndex === -1)
+    if (ficheIndex === -1) {
       return NextResponse.json({ error: "Non trouvé" }, { status: 404 });
-
+    }
+    
     // Remove the fiche
     db.fiches.splice(ficheIndex, 1);
     saveDb(db);
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    return NextResponse.json({ error: "Erreur serveur" }, { status: 500 });
+    return NextResponse.json({ error: "Erreur serveur", message: error?.message, err }, { status: 500 });
   }
 }
