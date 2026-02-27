@@ -291,7 +291,7 @@ export default function FichesListPage() {
                             locale: fr,
                           })}
                         </TableCell>
-                        <TableCell className="text-right py-3 space-x-2">
+                        <TableCell className="text-right py-3 space-x-2 hidden">
                           {user?.role === "ADMIN" && (
                             <AlertDialog>
                               <AlertDialogTrigger asChild>
