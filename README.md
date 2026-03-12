@@ -1,6 +1,6 @@
 # AssurePro - Gestion de Fiches Assurance
 
-Cette mini-application "Gestion de Fiches Assurance" a été développée dans le cadre du test technique frontend pour le poste de "Développeur Frontend (Zenith Assurances)".
+Cette mini-application "Gestion de Fiches Assurance" a été développée dans le cadre du test technique frontend pour le poste de "Développeur Frontend" pour l'entreprise Zenith Assurances.
 
 ## Choix Techniques
 
